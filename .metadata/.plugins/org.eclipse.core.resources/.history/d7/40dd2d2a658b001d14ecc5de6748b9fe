@@ -1,0 +1,9 @@
+package collections.Set;
+
+public class SetExample
+{
+    public static void main(String [] args)
+    {
+        int arr [] =new int [45,89,62,32,47,8,96,45,1,26,1,2,8];
+    }
+}

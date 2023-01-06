@@ -1,0 +1,27 @@
+package abstract1;
+
+abstract class B{
+    int a;
+    public B(int num)
+    {
+        this.a=num;
+    }
+    abstract void fun(int a);
+}
+
+public class A extends B{
+    public A(int n)
+    {
+        super(n);
+    }
+    @Override
+    public void fun(int n)
+    {
+        System.out.println(this.a);
+    }
+    public static void main(String[] args) {
+       
+
+    }
+
+}

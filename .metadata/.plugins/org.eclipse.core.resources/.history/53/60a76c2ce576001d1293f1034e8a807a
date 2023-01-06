@@ -1,0 +1,26 @@
+package abstract1;
+
+public class A extends B{
+    public A(int a)
+    {
+        super(a);
+    }
+    @Override
+    public void fun(int n)
+    {
+        
+    }
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}
+abstract class B{
+    int a;
+    public B(int num)
+    {
+        this.a=num;
+    }
+    abstract void fun(int a);
+}

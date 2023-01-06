@@ -1,0 +1,79 @@
+package collections;
+
+import java.util.Set;
+import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Arrays;
+class SetPractice{
+    public static void main(String [] args)
+    {
+    /*
+        int row=5;
+        int cnt =1;
+        for(int i=row;i>=1;i--)
+        {
+            for(int j=1;j<i;j++)
+            {
+                System.out.print(" ");
+            }
+            
+            for(int j=1;j<=cnt;j++)
+            {
+                System.out.print(j);
+            }
+        cnt++;
+        System.out.println();
+        }
+    */
+        int arr [] = {45,6,89,55,4,6,5,89,1,45,62,89};
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> set2 = new HashSet<>();
+        Integer arr1 [] = {8,45,2,26,45,9,89,65,32};
+        set2.addAll(Arrays.asList(arr1));
+        for(Integer i : arr)
+        {
+            set1.add(i);
+        } 
+        System.out.println(set1);
+        // sorting set with using arraylist
+//        ArrayList<Integer> al = new ArrayList<>(set1);
+//        java.util.Collections.sort(al);
+        System.out.println(set1);
+
+        System.out.println();
+        System.out.print(set2);
+        System.out.println();
+        set1.addAll(set2);
+        System.out.print(set1);
+        set1.removeAll(set2);
+        System.out.println();
+        System.out.println(set1);
+        Set<Integer> set3 =new HashSet<>();
+        set3.addAll(Arrays.asList(new Integer[] { 1, 4, 5, 6, 55, 62}));
+
+
+        Integer[] arr23 = new Integer[set3.size()];
+        set3.toArray(arr23);
+        int count1=0;
+        while(count1!=arr23.length)
+        {
+            System.out.print(arr23[count1]+" ");
+            count1++;
+        }
+        System.out.println();
+        System.out.println(set3.size());
+        Object [] arr12 = set3.toArray();
+        int count=0;
+        while(count!=arr12.length)
+        {
+            System.out.print(arr12[count]+" ");
+            count++;
+        }
+        System.out.println("\n"+set1.containsAll(set3));
+        System.out.println(set1.hashCode());
+        set1.removeAll(set3);
+        System.out.println(set1);
+        System.out.println(set1.hashCode());
+        
+    }
+}

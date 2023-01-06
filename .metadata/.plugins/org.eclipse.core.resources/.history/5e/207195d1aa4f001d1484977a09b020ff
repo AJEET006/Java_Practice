@@ -1,0 +1,31 @@
+
+public class SmallestValueFromArray {
+ static int  minValue(int n, int[] a, int s,int D)
+     {
+    
+     int sum=0;
+          for(int i = 0;i<n;i++)
+          {
+              sum+=a[i]/D;
+          }
+          if(sum>s)
+          {
+            D++; 
+            minValue(n,a,s,D++); 
+          }        
+       return D; 
+    }
+
+    public static void main(String[] args) {
+     
+        int A [] = {3,4,7,2};
+        int N=4;
+        int s = 5;
+        int d=1;
+        int D= minValue(N,A,s,d);
+        System.out.println(D);
+    }
+
+   
+
+}

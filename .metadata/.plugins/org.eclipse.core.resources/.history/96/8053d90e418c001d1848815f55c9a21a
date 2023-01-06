@@ -1,0 +1,13 @@
+package collections;
+
+public class SetMore {
+    public static void main(String [] args)
+    {
+        int arr[] = {32, 1, 65, 2, 4, 5, 6, 8, 9, 45, 55, 89, 26, 62};
+        java.util.Set<Integer> set = new java.util.HashSet<>();
+        for(Integer i : arr)
+        {
+            set.add(i);
+        }
+    }
+}

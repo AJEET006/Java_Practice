@@ -1,0 +1,17 @@
+import java.util.*;
+public class TomAndJerry {
+
+    public static String decideWinner(int n, int m)
+    {
+        String str = "";
+        return str;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+       String result = decideWinner(n,m);
+       System.out.print(result);
+    }
+
+}
